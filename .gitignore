@@ -1,0 +1,5 @@
+*.o
+*.a
+isort
+txtfind
+.vscode
