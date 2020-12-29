@@ -18,7 +18,7 @@ int getline_(char s[])
         s[i] = temp; // placing temp in the array
         i++;
     }
-    return 1;
+    return i;
 }
 int getword_(char w[])
 {
@@ -36,7 +36,7 @@ int getword_(char w[])
         w[i] = temp; // puting temp in the array
         i++;
     }
-    return 1;
+    return i;
 }
 
 int strlen_(char * str1) // returning the length of a string
