@@ -27,7 +27,7 @@ int getword_(char w[])
     while (i<WORD) // until the word is full
     {
         if(scanf("%c",&temp)!=1)
-            return 0;
+            return -1;
         if(temp=='\n'|| temp=='\t'||temp==' ' || temp==EOF) // if we entered something that end the word then break the loop
         {
             w[i]='\0'; // placing it in the array as the end of the word
@@ -123,7 +123,7 @@ void print_similar_words_(char * str)  // printing sll the words that wimmilar t
     char word [WORD];
     while(getword_(word))
     {
-        if(similar_(word,str,1)) // if different by max 1 letter and all the other letters the same then print
+        if(similar_(word,str,1) != -1) // if different by max 1 letter and all the other letters the same then print
         {
             printf("%s\n",word);
         }
