@@ -76,7 +76,7 @@ int getmin(int a , int b) // returning the smaller int between 2
         return b;
 }
 
-int similar_(char *s, char *t, int n)
+int similar_(char *s, char *t, int n) // checking if 2 words are simmilar or different in max n letters
 {
     int lens = strlen_(s);
     int lent = strlen_(t);
@@ -87,7 +87,7 @@ int similar_(char *s, char *t, int n)
     int i = 0,j = 0; // i is to go through s and j to go through t
     while(n>=0&&i!=lens) // going through the s
     {
-        if(s[i]==t[j]) // if we fount 2 simmilar letters then go forward in s and t
+        if(s[i]==t[j]) // if we found 2 simmilar letters then go forward in s and t
         {
             if(i<lens) // if we not came to the end
                 i++;
